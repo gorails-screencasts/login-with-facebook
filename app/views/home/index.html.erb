@@ -1,1 +1,8 @@
 <h1>Welcome to Facebookr!</h1>
+
+<% @results.each do |result| %>
+  <p><%= result['message'] %></p>
+<% end %>
+
+<%= link_to 'Previous', url_for(:page => @results.previous_page_params) %>
+<%= link_to 'Next', url_for(:page => @results.next_page_params) %>

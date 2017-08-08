@@ -64,3 +64,5 @@ gem 'sidekiq', '~> 5.0'
 gem 'foreman', '~> 0.84.0'
 
 gem 'omniauth-facebook'
+gem 'koala'
+
