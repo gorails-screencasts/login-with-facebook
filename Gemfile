@@ -66,3 +66,5 @@ gem 'foreman', '~> 0.84.0'
 gem 'omniauth-facebook'
 gem 'koala'
 
+gem 'omniauth-twitter'
+gem 'twitter'

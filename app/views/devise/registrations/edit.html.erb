@@ -33,6 +33,28 @@
     <% end %>
     <hr>
 
+    <p>
+      <strong>Twitter:</strong>
+
+      <% if current_user.services.twitter.any? %>
+        Connected
+      <% else %>
+        <%= link_to "Connect", user_twitter_omniauth_authorize_path %>
+      <% end %>
+    </p>
+
+    <p>
+      <strong>Facebook:</strong>
+
+      <% if current_user.services.facebook.any? %>
+        Connected
+      <% else %>
+        <%= link_to "Connect", user_facebook_omniauth_authorize_path %>
+      <% end %>
+    </p>
+
+    <hr>
+
     <p class="text-center"><%= link_to "Deactivate my account", registration_path(resource_name), data: { confirm: "Are you sure? You cannot undo this." }, method: :delete %></p>
   </div>
 </div>
